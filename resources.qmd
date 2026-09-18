@@ -1,0 +1,472 @@
+---
+title: "Resources"
+subtitle: "Open Science and Meta-Science for Communication Research · UZH · Autumn 2026"
+author: "Ye Sun"
+date: last-modified
+date-format: "D MMMM YYYY"
+format:
+  html:
+    embed-resources: true
+    toc: false
+    theme: cosmo
+    fontsize: 1.05em
+    linestretch: 1.6
+    mainfont: "Georgia, 'Times New Roman', serif"
+    anchor-sections: true
+    link-external-newwindow: true
+    include-in-header:
+      text: |
+        <style>
+        :root { --tab-accent: #0f4c81; }
+        body { max-width: 62rem; margin: 0 auto; }
+        .nav-tabs { border-bottom: 2px solid #e3e6ea; margin-bottom: 1.5rem; }
+        .nav-tabs .nav-link {
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-size: .86rem; letter-spacing: .01em;
+        color: #5a6570; border: none; padding: .5rem .85rem;
+        }
+        .nav-tabs .nav-link:hover { color: var(--tab-accent); background: #f4f6f8; }
+        .nav-tabs .nav-link.active {
+        color: var(--tab-accent); font-weight: 600;
+        background: transparent; border-bottom: 2px solid var(--tab-accent);
+        }
+        .panel-tabset { margin-bottom: 3rem; }
+        .panel-tabset p { margin-bottom: .9rem; }
+        h1 { font-size: 1.5rem; margin-top: 2.5rem; padding-bottom: .3rem;
+        border-bottom: 1px solid #e3e6ea; }
+        h3 { font-size: 1.05rem; margin-top: 1.8rem; color: #0f4c81; }
+        table { font-size: .92rem; }
+        code { font-size: .88em; color: #a33; background: #f6f7f9;
+        padding: .1em .3em; border-radius: 3px; }
+        </style>
+engine: markdown
+---
+
+*A companion to the syllabus. The readings are a bank, not a week-by-week assignment: they are grouped by theme, and I will name the specific ones for each session about a week ahead. Suggestions are welcome. The second half is the practical guide to R and Quarto — treat "Setting up" as your week-one checklist and the rest as reference.*
+
+# Readings
+
+::: panel-tabset
+## How we got here
+
+*The state of science: how we got here*
+
+### Cautionary cases and fraud
+
+The Stapel case: [Borsboom, D., & Wagenmakers, E.-J. (2013). Derailed: The rise and fall of Diederik Stapel (book review). *APS Observer.*](https://www.dropbox.com/scl/fi/h8xevg62azmg874g4hqyg/StapleBookReview.pdf?rlkey=0rb4tighpkqy3s44ccykc7udk&dl=0)
+
+The Gino case: <http://chronicle.com/article/the-day-i-learned-my-harvard-colleague-was-fabricating-data> [Also accessible here](https://www.dropbox.com/scl/fi/mcxtw9od9axrgxeuxjuin/Opinion-_-The-Day-I-Learned-My-Harvard-Colleague-Was-Fabricating-Data.pdf?rlkey=epumbfmbqy4v24b4krswzynri&dl=0)
+
+The Wansink case: <https://www.npr.org/sections/thesalt/2018/09/26/651849441/cornell-food-researchers-downfall-raises-larger-questions-for-science>
+
+The Bem case: <https://statmodeling.stat.columbia.edu/2013/08/25/a-new-bem-theory/> (read the comments as well)
+
+Yarkoni's critique on Bem: <https://talyarkoni.org/blog/2011/01/10/the-psychology-of-parapsychology/>
+
+[Neuroskeptic. (2012). The nine circles of scientific hell. *Perspectives on Psychological Science, 7*(6), 643--644.](https://journals.sagepub.com/doi/full/10.1177/1745691612459519)
+
+## Open science
+
+*Open science: the movement, its principles, its practices*
+
+\[core\] [Munafò, M. R., et al. (2017). A manifesto for reproducible science. *Nature Human Behaviour, 1*, 0021.](https://www.nature.com/articles/s41562-016-0021)
+
+\[core\] Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. *Science, 349*(6251), aac4716.
+
+Camerer, C. F., et al. (2018). Evaluating the replicability of social science experiments in *Nature* and *Science* between 2010 and 2015. *Nature Human Behaviour, 2*, 637--644.
+
+Baker, M. (2016). Is there a reproducibility crisis? *Nature, 533*(7604), 452--454.
+
+Ioannidis, J. P. A. (2005). Why most published research findings are false. *PLoS Medicine, 2*(8), e124.
+
+Goodman, S. N., Fanelli, D., & Ioannidis, J. P. A. (2016). What does research reproducibility mean? *Science Translational Medicine, 8*(341), 341ps12.
+
+LeBel, E. P., McCarthy, R. J., Earp, B. D., Elson, M., & Vanpaemel, W. (2018). A unified framework to quantify the credibility of scientific findings. *Advances in Methods and Practices in Psychological Science, 1*(3), 389--402.
+
+Nosek, B. A., et al. (2015). Promoting an open research culture. *Science, 348*(6242), 1422--1425. *(The TOP guidelines --- essential for Track B.)*
+
+Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. *PNAS, 115*(11), 2600--2606.
+
+Chambers, C. D., & Tzavella, L. (2022). The past, present and future of registered reports. *Nature Human Behaviour, 6*, 29--42.
+
+Levenstein, M. C., & Lyle, J. A. (2018). Data: Sharing is caring. *Advances in Methods and Practices in Psychological Science, 1*(1), 95--103.
+
+Wilkinson, M. D., et al. (2016). The FAIR Guiding Principles for scientific data management and stewardship. *Scientific Data, 3*, 160018.
+
+Ross-Hellauer, T. (2017). What is open peer review? A systematic review. *F1000Research, 6*, 588.
+
+## Meta-science
+
+*Meta-science: what it is*
+
+\[core\] Ioannidis, J. P. (2018). [Meta-research: Why research on research matters](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2005468). *PLoS biology*, *16*(3), e2005468.
+
+\[core\] Fiona Fidler, *What is meta-science?* (talk) --- <https://www.youtube.com/watch?v=5LF_vw0ARGk>
+
+Ioannidis, JP, Fanelli, D., Dunne, DD, & Goodman, SN (2015). [Meta-research: evaluation and improvement of research methods and practices](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002264). *PLoS Biol* , *13* (10), e1002264.
+
+[Hardwicke, T. E., Serghiou, S., Janiaud, P., Danchev, V., Crüwell, S., Goodman, S. N., & Ioannidis, J. P. A. (2020). Calibrating the scientific ecosystem through meta-research. *Annual Review of Statistics and Its Application, 7*, 11--37.](https://www.dropbox.com/scl/fi/7qz029om6xkiualg7jytf/Hartwright_2019_UG_Perspectives-on-improv-methods-in-Psyc-Science.pdf?rlkey=gkvmlr4hwqd7zjklgwx34blgn&dl=0)
+
+[An Introduction To Forensic Metascience](https://doi.org/10.5281/zenodo.14871843) \| James Heathers
+
+*How to select a meta-science project* (talk) --- <https://www.youtube.com/watch?v=LhEClcN9XHY>
+
+Metaventory --- a catalogue of meta-science tools and resources --- <https://metaventory.vercel.app/>
+
+## Communication
+
+*In communication research*
+
+Dienlin, T., et al. (2021). An agenda for open science in communication. *Journal of Communication, 71*(1), 1--26.
+
+Bowman, N. D., & Keene, J. R. (2018). A layered framework for considering open science practices. *Communication Research Reports, 35*(4), 363--372.
+
+*Below are the models to imitate. If you are looking for a project shape, start here.*
+
+Keating, D. M., & Totzkay, D. (2019). We do publish (conceptual) replications (sometimes): Publication trends in communication science, 2007--2016. *Annals of the International Communication Association, 43*(3), 225--239.
+
+Vermeulen, I., Beukeboom, C. J., Batenburg, A., Avramiea, A., Stoyanov, D., van de Velde, B., & Oegema, D. (2015). Blinded by the light: How a focus on statistical "significance" may cause p-value misreporting and an excess of p-values just below .05 in communication science. *Communication Methods and Measures, 9*(4), 253--279.
+
+Sun, Y., Shen, L., Pan, Z., & Qian, S. (2025). Toward a more powerful experimental communication science: An assessment of two decades' research (2001--2023). *Communication Research, 52*(2), 173--208.
+
+Sun, Y., & Pan, Z. (2020). Not published is not perished: Addressing publication bias in meta-analytic studies in communication. *Human Communication Research, 46*(2--3), 300--321.
+
+Masur, P. K., & Ranzini, G. (2025). Privacy calculus, privacy paradox, and context collapse: A replication of three key studies in communication privacy research. *Journal of Communication.*
+
+## NHST & p-values
+
+Greenland, S., Senn, S. J., Rothman, K. J., Carlin, J. B., Poole, C., Goodman, S. N., & Altman, D. G. (2016). Statistical tests, p values, confidence intervals, and power: A guide to misinterpretations. *European Journal of Epidemiology, 31*(4), 337--350.
+
+Nuzzo, R. (2014). Scientific method: Statistical errors. *Nature, 506*(7487), 150--152. *(The gentle entry point.)*
+
+Cohen, J. (1994). The earth is round (p \< .05). *American Psychologist, 49*(12), 997--1003.
+
+Cohen, J. (1990). Things I have learned (so far). *American Psychologist, 45*(12), 1304--1312.
+
+Cumming, G. (2014). The new statistics: Why and how. *Psychological Science, 25*(1), 7--29. *(See also the "dance of the p-values" demonstration.)*
+
+## QRPs
+
+*Questionable research practices*
+
+Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. *Psychological Science, 22*(11), 1359--1366.
+
+Gelman, A., & Loken, E. (2014). The statistical crisis in science. *American Scientist, 102*(6), 460--465. *(The garden of forking paths.)*
+
+Kerr, N. L. (1998). HARKing: Hypothesizing after the results are known. *Personality and Social Psychology Review, 2*(3), 196--217.
+
+John, L. K., Loewenstein, G., & Prelec, D. (2012). Measuring the prevalence of questionable research practices with incentives for truth telling. *Psychological Science, 23*(5), 524--532.
+
+Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2012). A 21-word solution. *(Available via SSRN.)*
+
+## Publication bias
+
+*Positive bias and publication bias*
+
+Scheel, A. M., Schijen, M. R. M. J., & Lakens, D. (2021). An excess of positive results: Comparing the standard psychology literature with registered reports. *Advances in Methods and Practices in Psychological Science, 4*(2).
+
+Fanelli, D. (2011). Negative results are disappearing from most disciplines and countries. *Scientometrics, 90*(3), 891--904.
+
+Ferguson, C. J., & Heene, M. (2012). A vast graveyard of undead theories: Publication bias and psychological science's aversion to the null. *Perspectives on Psychological Science, 7*(6), 555--561.
+
+Kvarven, A., Strømland, E., & Johannesson, M. (2020). Comparing meta-analyses and preregistered multiple-laboratory replication projects. *Nature Human Behaviour, 4*(4), 423--434.
+
+Schoenfeld, J. D., & Ioannidis, J. P. A. (2013). Is everything we eat associated with cancer? A systematic cookbook review. *American Journal of Clinical Nutrition, 97*(1), 127--134.
+
+## Power & effect size
+
+Funder, D. C., & Ozer, D. J. (2019). Evaluating effect size in psychological research: Sense and nonsense. *Advances in Methods and Practices in Psychological Science, 2*(2), 156--168.
+
+Lakens, D. (2022). Sample size justification. *Collabra: Psychology, 8*(1), 33267.
+
+Simonsohn, U. (2015). Small telescopes: Detectability and the evaluation of replication results. *Psychological Science, 26*(5), 559--569.
+
+Pek, J., & Flora, D. B. (2018). Reporting effect sizes in original psychological research: A discussion and tutorial. *Psychological Methods, 23*(2), 208--225.
+
+Ferguson, C. J., & Heene, M. (2021). Providing a lower-bound estimate for psychology's "crud factor": The case of aggression. *Professional Psychology: Research and Practice, 52*(6), 620--626.
+
+Colquhoun, D. (2014). An investigation of the false discovery rate and the misinterpretation of *p* -values. *Royal Society Open Science*, *1*(3), 140216. <https://doi.org/10.1098/rsos.140216>
+
+No-way interactions--- <https://datacolada.org/17>
+
+Funder, D. C. (2013). How high is the sky? Well, higher than the ground. *(Blog post.)* --- <https://funderstorms.wordpress.com/2013/02/09/how-high-is-the-sky-well-higher-than-the-ground/>
+
+## Replication
+
+*Replication and reproducibility*
+
+Zwaan, R. A., Etz, A., Lucas, R. E., & Donnellan, M. B. (2018). Making replication mainstream. *Behavioral and Brain Sciences, 41*, e120.
+
+Hardwicke, T. E., et al. (2018). Data availability, reusability, and analytic reproducibility: Evaluating the impact of a mandatory open data policy at the journal *Cognition*. *Royal Society Open Science, 5*(8), 180448.
+
+Trisovic, A., Lau, M. K., Pasquier, T., & Crosas, M. (2022). A large-scale study on research code quality and execution. *Scientific Data, 9*, 60.
+
+Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. *PLOS Computational Biology, 13*(6), e1005510. **\[useful for the reproducibility assignment\]**
+
+Penders, B., Holbrook, J. B., & de Rijcke, S. (2019). Rinse and repeat: Understanding the value of replication across different ways of knowing. *Publications, 7*(3), 52.
+
+## Measurement & theory
+
+*Measurement, validity, and theory*
+
+Flake, J. K., & Fried, E. I. (2020). Measurement schmeasurement: Questionable measurement practices and how to avoid them. *Advances in Methods and Practices in Psychological Science, 3*(4), 456--465.
+
+Scheel, A. M. (2022). Why most psychological research findings are not even wrong. *Infant and Child Development, 31*(1), e2295.
+
+Brown, S. D., Furrow, D., Hill, D. F., Gable, J. C., Porter, L. P., & Jacobs, W. J. (2014). A duty to describe: Better the devil you know than the devil you don't. *Perspectives on Psychological Science, 9*(6), 626--640.
+
+## Forensic tools · Track A
+
+*Forensic tools — for Track A projects*
+
+Simonsohn, U., Nelson, L. D., & Simmons, J. P. (2014). P-curve and effect size: Correcting for publication bias using only significant results. *Perspectives on Psychological Science, 9*(6), 666--681.
+
+Nuijten, M. B., Hartgerink, C. H. J., van Assen, M. A. L. M., Epskamp, S., & Wicherts, J. M. (2016). The prevalence of statistical reporting errors in psychology (1985--2013). *Behavior Research Methods, 48*(4), 1205--1226. *(statcheck.)*
+
+Brown, N. J. L., & Heathers, J. A. J. (2017). The GRIM test: A simple technique detects numerous anomalies in the reporting of results in psychology. *Social Psychological and Personality Science, 8*(4), 363--369.
+
+Francis, G. (2014). The frequency of excess success for articles in *Psychological Science*. *Psychonomic Bulletin & Review, 21*(5), 1180--1187.
+
+Ioannidis, J. P. A., & Trikalinos, T. A. (2007). An exploratory test for an excess of significant findings. *Clinical Trials, 4*(3), 245--253.
+
+Simonsohn, U. (2012). It does not follow: Evaluating the one-off publication bias critiques by Francis. *Perspectives on Psychological Science, 7*(6), 597--599. *(The counter-argument; read with Francis.)*
+
+Simonsohn, U. (2013). Just post it: The lesson from two cases of fabricated data detected by statistics alone. *Psychological Science, 24*(10), 1875--1888.
+
+Schimmack, U. (2014). Quantifying statistical research integrity: The R-index. *(Replicability-Index blog.)*
+
+Bartoš, F., & Schimmack, U. (2022). Z-curve 2.0: Estimating replication rates and discovery rates. *Meta-Psychology, 6.*
+
+McShane, B. B., Böckenholt, U., & Hansen, K. T. (2016). Adjusting for Publication Bias in Meta-Analysis: An Evaluation of Selection Methods and Some Cautionary Notes. *Perspectives on Psychological Science*, *11*(5), 730--749. <https://doi.org/10.1177/1745691616662243>
+
+Also check: Metaventory --- a catalogue of meta-science tools and resources --- <https://metaventory.vercel.app/>
+
+## Transparency · Track B
+
+*Transparency and reporting standards — for Track B projects*
+
+Nosek, B. A., et al. (2015). Promoting an open research culture. *Science, 348*(6242), 1422--1425. *(TOP guidelines; also listed in §3.)*
+
+Hardwicke, T. E., et al. (2020). An empirical assessment of transparency and reproducibility-related research practices in the social sciences (2014--2017). *Royal Society Open Science, 7*(2), 190806. *(The template for a transparency-trends audit.)*
+
+Hardwicke, T. E., et al. (2021). Analytic reproducibility in articles receiving open data badges at *Psychological Science*: An observational study. *Royal Society Open Science, 8*(1), 201494. *(Nominal versus actual availability --- the Track B question in its purest form.)*
+
+Kidwell, M. C., et al. (2016). Badges to acknowledge open practices: A simple, low-cost, effective method for increasing transparency. *PLOS Biology, 14*(5), e1002456.
+
+Claesen, A., Gomes, S., Tuerlinckx, F., & Vanpaemel, W. (2021). Comparing dream to reality: An assessment of adherence of the first generation of preregistered studies. *Royal Society Open Science, 8*(10), 211037. *(Preregistration adherence --- a ready-made design to port to communication.)*
+
+Also check: Metaventory --- a catalogue of meta-science tools and resources --- <https://metaventory.vercel.app/>
+
+## Incentives & systems
+
+*Incentives, systems, and culture*
+
+Smaldino, P. E., & McElreath, R. (2016). The natural selection of bad science. *Royal Society Open Science, 3*(9), 160384.
+
+Nelson, L. D., Simmons, J. P., & Simonsohn, U. (2012). Let's publish fewer papers. *Psychological Inquiry, 23*(3), 291--293.
+
+Vazire, S. (2018). Implications of the credibility revolution for productivity, creativity, and progress. *Perspectives on Psychological Science, 13*(4), 411--417.
+
+### Who pays for the infrastructure --- a live case, autumn 2026
+
+*The Center for Open Science announced in August 2026 that it is retiring the OSF Projects workflow: no new projects after 16 November 2026, all projects read-only from 19 February 2027. Registrations and preprints continue. This is our week 13 case study, and it is worth more than a footnote --- the field built a decade of open practice on one nonprofit's free tier.*
+
+Center for Open Science. (2026). *OSF changes.* --- <https://www.cos.io/osf-changes>, with the transition details at <https://help.osf.io/article/759-details-of-osf-projects-transition>
+
+Nature news. (2026). Popular open-science platform to stop hosting data and code amid funding concerns. *Nature.* --- <https://www.nature.com/articles/d41586-026-02598-y>
+
+Simonsohn, U., Nelson, L. D., & Simmons, J. P. (2026). \[137\] OSF will stop accepting your research files, you can use ResearchBox instead. *Data Colada.* --- <https://datacolada.org/137>
+
+*Questions worth holding onto: if "open" depends on a platform that can withdraw a service, what exactly was open? Does a DOI that resolves to a read-only archive satisfy a data-availability statement? And who should be paying --- funders, libraries, journals, or nobody?*
+
+*On the limits of transparency:* "When all findings are made available, (a) it is harder to discriminate the true findings from the false findings, and (b) there will be more false findings." --- a claim worth arguing about in week 13.
+
+## General resources
+
+**Books**
+
+- Ritchie, S. (2020). *Science Fictions.*
+- Chambers, C. (2017). *The Seven Deadly Sins of Psychology.*
+- Harris, R. (2017). *Rigor Mortis: How Sloppy Science Creates Worthless Cures, Crushes Hope, and Wastes Billions.*
+
+**Open textbooks**
+
+- Lakens, D. *Improving Your Statistical Inferences* --- <https://lakens.github.io/statistical_inferences/>
+- Poldrack, R. A. *Statistical Thinking for the 21st Century* --- <https://statsthinking21.github.io/statsthinking21-core-site/>
+- *The Turing Way* --- <https://the-turing-way.netlify.app>
+- Harrer, M., et al. *Doing Meta-Analysis in R* --- <https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/>
+
+**Blogs and sites**
+
+- Data Colada --- <https://datacolada.org/>
+- <https://trustworthy.scientific.claims/>
+- post-publication peer review comments--- <https://www.pubpeer.com/>
+- Retraction Watch --- <https://retractionwatch.com/>
+- FORRT clusters --- <https://forrt.org/clusters/>
+- Replicability-Index --- <https://replicationindex.com/>
+- OSF Open and Reproducible Methods syllabi collection --- <https://osf.io/vkhbt/>
+
+**Podcasts**
+
+- The Black Goat -- https://www.theblackgoatpodcast.com/
+- ReproducibiliTea --- <https://soundcloud.com/reproducibilitea>
+- Everything Hertz --- <https://everythinghertz.com/>
+- Juice and Squeeze --- <https://www.juiceandsqueeze.net/>
+- Nullius in Verba --- <https://nulliusinverba.podbean.com/>
+
+**Comprehensive bibliography**
+
+Roberts, B., & Simons, D. --- *Reproducibility and Replicability Reading List* (a large, community-maintained bibliography; useful when you need depth on a topic beyond what is listed here). A copy is in the course folder.
+:::
+
+# R and Quarto
+
+*You will do all analysis in R and write in Quarto. Prior R experience helps but is not assumed.*
+
+::: panel-tabset
+## Setting up
+
+Install, in this order:
+
+1.  **R** (latest release) --- <https://cran.r-project.org>
+2.  **RStudio Desktop** --- <https://posit.co/download/rstudio-desktop/>. Quarto is with recent RStudio; you can also install Quarto separately from <https://quarto.org/docs/get-started/>.
+3.  **Git**, and a GitHub account --- <https://happygitwithr.com> is the definitive guide to getting Git, GitHub, and RStudio talking to one another. Budget an evening; it is a highest-return hour of setup in this course.
+4.  A **Zenodo account** --- <https://zenodo.org> --- signed in with GitHub, with the GitHub--Zenodo integration switched on for your project repository (<https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content>). Every GitHub release then becomes an archived, DOI-bearing snapshot automatically. Add a `CITATION.cff` file to the repository so the citation metadata is machine-readable.
+5.  An **OSF account** --- <https://osf.io> --- for your preregistration. Note that OSF Projects are being retired (no new projects after 16 November 2026; read-only from 19 February 2027); **Registries and Preprints continue unaffected**, and that is all we will use OSF for. You will still read plenty of other people's OSF project archives, which remain viewable and downloadable.
+6.  **Zotero** plus the **Better BibTeX** extension --- <https://www.zotero.org>, <https://retorque.re/zotero-better-bibtex/>. Export your library to a `.bib` file that Quarto cites from directly.
+
+Verify your setup by rendering a Quarto document to HTML and to Word in week one. If that works, everything else is detail.
+
+## Project hygiene
+
+Three habits, adopted now, will save your project later.
+
+- **One RStudio Project per study**, with a folder structure you decide once: `data/raw/` (never written to), `data/processed/`, `R/`, `analysis/`, `output/`. Use the `here` package for paths, never `setwd()`.
+- **Record your dependencies.** `renv` snapshots the exact package versions your analysis used, so that the project still runs next year. `renv::init()` at the start, `renv::snapshot()` whenever you add a package.
+- **Commit often, with messages that mean something.** Version control is what lets your co-authors work on your project without sending files back and forth, and it is the evidence trail your contribution grade reads.
+
+## Core stack
+
+install.packages(c("tidyverse", "here", "renv", "janitor", "quarto"))
+
+`tidyverse` for data manipulation and graphics (`dplyr`, `tidyr`, `ggplot2`, `readr`, `stringr`, `purrr`), `janitor` for cleaning imported spreadsheets, `here` for paths.
+
+## Packages
+
+Install by track; nobody needs all of these.
+
+### Forensic and evidential-value tools (Track A)
+
+| Package | What it does |
+|:---|:---|
+| `statcheck` | Extracts reported NHST results from papers and recomputes p-values; the workhorse of reporting-consistency audits |
+| `zcurve` | Z-curve 2.0 --- estimates expected replicability and observed/expected discovery rates from a set of test statistics |
+| `dmetar` | Companion to *Doing Meta-Analysis in R*; includes p-curve, power analysis, and bias diagnostics |
+| `puniform` | p-uniform and p-uniform\* --- effect-size estimation corrected for publication bias |
+| `metafor` | The comprehensive meta-analysis package; also the base most bias-correction methods build on |
+| `PublicationBias` | Sensitivity analysis for publication bias (Mathur & VanderWeele) |
+| `RoBMA` | Robust Bayesian meta-analysis --- model-averaged estimates across publication-bias models |
+| `metasens` | Further sensitivity methods, including limit meta-analysis and Copas selection |
+| `scrutiny` | GRIM, GRIMMER, DEBIT --- consistency tests for reported summary statistics |
+| `rsprite2` | SPRITE --- reconstructs plausible raw data from reported means and SDs |
+| `pwr`, `Superpower` | Power analysis for the standard tests and for factorial designs |
+| `effectsize`, `esc`, `effsize` | Effect-size computation and conversion between metrics |
+| `TOSTER` | Equivalence testing and the "small telescopes" family of replication evaluations |
+
+### Corpus building and screening (both tracks)
+
+| Package | What it does |
+|:---|:---|
+| `openalexR` | Queries OpenAlex --- the most useful free bibliographic API for building a sampling frame |
+| `rcrossref` | Crossref metadata, including DOIs, licences, and funder information |
+| `roadoi` | Resolves open-access status and full-text locations via Unpaywall |
+| `revtools`, `synthesisr`, `litsearchr` | Systematic-review workflow: import, deduplicate, screen, and design search strings |
+| `pdftools` | Extracts text from PDFs; the entry point for automated coding of article corpora |
+| `osfr` | Talks to the OSF API from R --- still the fastest way to pull down the many existing OSF archives your corpus will point at |
+| `zen4R` | Zenodo API from R --- deposit, version, and retrieve archives programmatically |
+
+### Reporting and manuscripts
+
+| Package | What it does |
+|:---|:---|
+| `papaja` | APA 7 manuscripts from R Markdown, with automatic statistical reporting |
+| `apaquarto` | The Quarto equivalent --- an extension, installed per-project, not a package |
+| `gt`, `flextable`, `tinytable` | Publication-quality tables; `flextable` is the reliable route into Word |
+| `targets` | Pipeline management for analyses too large to re-run by hand |
+
+## Quarto
+
+Quarto is the writing environment for this course: prose, code, results, figures, tables, and citations in one file that renders to Word, PDF, or HTML. The point is not elegance. The point is that the number in your manuscript is computed by the code beside it, so it cannot drift out of date, and a reader with your files can reproduce it exactly.
+
+A minimal document:
+
+```` markdown
+---
+title: "Evidential value in the third-person effect literature"
+author: "Your Name"
+date: today
+format:
+  docx:
+    reference-doc: custom-reference.docx
+bibliography: references.bib
+csl: apa.csl
+execute:
+  echo: false
+  warning: false
+---
+
+## Method
+
+We identified `r nrow(studies)` eligible studies.
+
+```{r}
+#| label: fig-pcurve
+#| fig-cap: "P-curve for the focal test statistics."
+plot_pcurve(studies)
+```
+
+As @fig-pcurve shows, ...
+````
+
+Things worth learning early, roughly in order of return:
+
+- **Chunk options** (`#| label:`, `#| echo:`, `#| fig-cap:`) --- labelled chunks are what make cross-references work.
+- **Inline code** --- `` `r nrow(studies)` `` writes a computed number into your prose. Use it for every number in the manuscript.
+- **Cross-references** --- `@fig-pcurve`, `@tbl-coding`, `@sec-method`. Numbering takes care of itself.
+- **Citations** --- `[@simmons2011]` from your `.bib` file, with a CSL style file for APA 7 (<https://www.zotero.org/styles>).
+- **Rendering to Word** with a `reference-doc` --- the fastest route to a document a co-author can comment on in track changes. For a full APA 7 manuscript, use `apaquarto` (<https://wjschne.github.io/apaquarto/>).
+- **Freezing and caching** (`execute: freeze: auto`) once your analysis takes more than a few seconds to run.
+
+## Where to learn
+
+**R**
+
+- R/Markdown guide: <https://docs.google.com/document/d/1qk8uIXyCPVLUTpXhzW069A0qbyZgaFfw9KaNV4ZI8w4/edit?tab=t.0>
+- Wickham, Çetinkaya-Rundel & Grolemund, *R for Data Science* (2nd ed.) --- <https://r4ds.hadley.nz>. The standard introduction; free.
+- *Happy Git and GitHub for the useR* --- <https://happygitwithr.com>
+- Lakens, *Improving Your Statistical Inferences* --- <https://lakens.github.io/statistical_inferences/>. The best free resource connecting statistical reasoning to open-science practice, with R throughout. Much of our week 6--7 material is here.
+- Harrer et al., *Doing Meta-Analysis in R* --- <https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/>
+- Matthew B. Jané, effect-size resources --- <https://matthewbjane.quarto.pub>
+
+**Quarto**
+
+- Official documentation --- <https://quarto.org/docs/guide/>. Unusually good; start with the Authoring and Output Formats sections.
+- Introduction to Quarto for Research projects — <https://pythonhealthdatascience.github.io/quarto-tutorial/>
+- FAIR & Reproducible Teaching with Quarto & Git — <https://lennartwittkuhn.com/fair-teaching-course/schedule.html>
+- Quarto for Scientists --- <https://qmd4sci.njtierney.com/>
+- `apaquarto` documentation --- <https://wjschne.github.io/apaquarto/>
+
+**Reproducible workflow**
+
+- Wilson, Bryan, Cranston, Kitzes, Nederbragt & Teal (2017). Good enough practices in scientific computing. *PLOS Computational Biology*, 13(6), e1005510.
+- The Turing Way --- <https://the-turing-way.netlify.app>
+- FORRT resources --- <https://forrt.org/clusters/>
+
+**When you are stuck**
+
+Post the problem to the seminar channel with a *reproducible example* --- the smallest piece of code that fails, plus the data it needs. Constructing one solves the problem outright surprisingly often. The `reprex` package does the packaging for you.
+:::
+
+------------------------------------------------------------------------
+
+*Version 1. Details may change; substantive changes will be announced in class and reflected in the posted version.*
