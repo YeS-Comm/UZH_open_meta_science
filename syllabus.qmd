@@ -1,0 +1,259 @@
+---
+title: "Syllabus"
+subtitle: "Open Science and Meta-Science for Communication Research"
+author: "Ye Sun"
+date: last-modified
+date-format: "D MMMM YYYY"
+output-file: index.html
+format:
+  html:
+    embed-resources: true
+    toc: true
+    toc-depth: 2
+    toc-title: "Contents"
+    theme: cosmo
+    fontsize: 1.05em
+    linestretch: 1.6
+    mainfont: "Georgia, 'Times New Roman', serif"
+    anchor-sections: true
+    link-external-newwindow: true
+    include-in-header:
+      text: |
+        <style>
+        :root { --accent: #0f4c81; }
+        body { max-width: 60rem; margin: 0 auto; }
+        #TOC { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: .85rem; }
+        #TOC a { color: #5a6570; }
+        #TOC a:hover { color: var(--accent); }
+        h1.title { margin-bottom: .1rem; }
+        .subtitle { color: var(--accent); font-weight: 600; font-size: 1.15rem; margin-bottom: .2rem; }
+        h1 { font-size: 1.45rem; margin-top: 2.6rem; padding-bottom: .3rem;
+             border-bottom: 1px solid #e3e6ea; color: #1a2530; }
+        h2 { font-size: 1.15rem; margin-top: 2rem; color: var(--accent); }
+        h3 { font-size: 1.02rem; margin-top: 1.5rem; }
+        table { font-size: .92rem; }
+        thead th { background: #f4f6f8; }
+        code { font-size: .88em; color: #a33; background: #f6f7f9; padding: .1em .3em; border-radius: 3px; }
+        .header-card {
+          background: #f4f6f8; border-radius: 8px; padding: 1.1rem 1.4rem;
+          margin: 1.2rem 0 1.8rem 0; font-size: .92rem;
+        }
+        .header-card table { margin: 0; }
+        .header-card td { border: none; padding: .15rem .6rem .15rem 0; }
+        .header-card td:first-child { font-family: system-ui, sans-serif; font-size: .78rem;
+          text-transform: uppercase; letter-spacing: .04em; color: #5a6570; white-space: nowrap; }
+        .callout { border-radius: 6px; }
+        </style>
+engine: markdown
+---
+
+::: header-card
+**University of Zurich · Institute of Media and Communication (IKMZ)** **Autumn Semester 2026 · 16 September -- 16 December 2026**
+
+|  |  |
+|------------------------------------|------------------------------------|
+| Instructor | Prof. Dr. Ye Sun |
+| Email | ye.sun2\@uzh.ch |
+| Office hours | By appointment via email |
+| Course materials | Distributed via OLAT |
+| Research platforms | GitHub · Zenodo · OSF Registries · R / RStudio · Quarto |
+:::
+
+# About this seminar
+
+This is a small seminar --- three students --- and it is built accordingly. Rather than a lecture course with group assignments bolted on, it runs as a collaborative research workshop in which each of you leads one meta-science project and works as a co-author on the other two. By the end of the semester, the seminar will have produced three studies, and each of you will have been an author on all three.
+
+Over the past fifteen years, psychology and the quantitative social sciences have had a reckoning. The published record, it became clear, does not translate into credible knowledge claims. Famous findings failed to replicate. Standard practices turned out to inflate false positives. This course is about how that was established, and what communication research can and should do.
+
+We treat open science not as a checklist of practices to comply with, but as a set of arguments --- about what counts as evidence, how credibility is lost and can be rebuilt, and what tools we can take up to make science more transparent and scientists more accountable. And we treat meta-science as its own type of research: not commentary on the state of science, but systematic diagnosis and evaluation of it.
+
+The seminar is hands-on throughout. You will reproduce a published analysis in R, design and preregister a meta-research study, execute it, and write it up as a manuscript with an open archive behind it. It puts you in a position to decide which standards you will hold your own work to.
+
+# What you will learn
+
+By the end of the semester you will be able to:
+
+- Understand open science and meta-science and reflect on the state of communication research.
+- Reproduce a published analysis from public materials in R, and diagnose precisely what is missing when reproduction fails.
+- Design a meta-research study: specify a sampling frame of studies, build a defensible coding protocol, and preregister the study plan.
+- Apply forensic meta-scientific methods to weigh the evidential value of a literature.
+- Assess a body of published work against transparency and reporting standards.
+- Produce a fully reproducible research artifact: a Quarto-rendered manuscript with linked code, data, and a citable public archive.
+- Work as a contributing co-author on someone else's project, and document that contribution honestly.
+
+# How the seminar runs
+
+**Three roles, three projects.** Each of you leads one project: you choose the question, own the design, run the analysis, and write the manuscript as first author. On the other two projects you are a co-author with a defined and substantive role --- typically second coder, analysis checker, or reproducibility auditor. Second coding is not a favour you do for your colleagues; in this kind of research it is a methodological requirement, and it is why a seminar of three can produce work that a seminar of one could not.
+
+**A companion resources page.** The reading list and the practical guide to R and Quarto live in a separate document, [resources.html](resources.html). Everything about setting up your machine, the package stack for each track, and how to write in Quarto is there, organized by tab. Work through its *Setting up* tab in week one.
+
+**Sessions vary by type.** Reading-and-discussion weeks, individual supervision meetings, and working sessions alternate through the term (see the schedule). Individual meetings are 30 minutes each, scheduled in advance, and you come with something written.
+
+**Everything is in the open from the start.** Each project lives in a public repository from week three, with its preregistration, materials, coding protocol, data, and code. You are doing open science, not writing about it.
+
+::: {.callout-important title="A note on infrastructure"}
+Until recently this course would have told you to put everything on the Open Science Framework. That is no longer good advice. In August 2026 the Center for Open Science announced it is retiring the OSF Projects workflow: no new projects or components after **16 November 2026**, and all existing projects permanently read-only after **19 February 2027**. Registrations and preprints are unaffected, and existing links and DOIs will continue to resolve --- but OSF is no longer a place to build an active research archive.
+:::
+
+So we will use a small stack rather than one platform:
+
+| Purpose | Where | Why |
+|:---|:---|:---|
+| Preregistration | **OSF Registries** (<https://osf.io/registries>) or **AsPredicted** (<https://aspredicted.org>) | Registration is explicitly continuing; a registration is immutable by design, so read-only is the point |
+| Working collaboration --- code, coding sheets, drafts | **GitHub** | Where the three of you actually work; also the record your contribution grade reads |
+| Citable archive of the finished study | **Zenodo** (<https://zenodo.org>), via its GitHub release integration | CERN-hosted, mints a DOI per release, and takes a snapshot of the repository with one click |
+| Alternative archive | **ResearchBox** (<https://researchbox.org>) | Purpose-built for research materials, auto-deposits to Zenodo with a DOI |
+
+Research infrastructure is not permanent, "open" and "durable" are not the same property, and a data-availability statement is only as good as the thing it points at. We will come back to this in week 13 --- and one of the Track B project shapes below turns it into an empirical question.
+
+# Assessment
+
+| Weight | Component |
+|--|:---|
+| **45%** | Lead project --- the meta-science study you direct and write as first author |
+| **15%** | Contribution to the two co-authored projects |
+| **25%** | Computational reproducibility report --- individual |
+| **15%** | Seminar participation and reading engagement |
+
+### Lead project (45%)
+
+A meta-research study in one of the two tracks described below, delivered as a Quarto-rendered manuscript in the conventions of a communication journal, with a complete public archive behind it --- GitHub repository, Zenodo deposit with a DOI, and a registration on OSF Registries. Graded on three dimensions, roughly equally weighted:
+
+- **Design and preregistration** --- is the sampling frame of studies defensible and clearly bounded? Is the coding protocol specific enough that a second coder could apply it? Are the analytic decisions specified in advance and adhered to, with deviations reported?
+- **Execution and reproducibility** --- does the manuscript render end-to-end from raw inputs? Is the code readable and structured? Is the archive complete enough that a stranger could repeat the study?
+- **Argument** --- does the paper say something, framed intelligibly for communication researchers, with claims calibrated to what the evidence can bear?
+
+Internal milestones (topic statement, preregistration, analysis check-in) are formative: you submit, receive written feedback, and revise. The project is graded once, at the end.
+
+### Contribution to co-authored projects (15%)
+
+This is the component with no established convention, so let me be explicit about how it will work, because you should know the rules before you start.
+
+For each project, all three of you file a short **contributorship statement** at the end of the term, using the CRediT taxonomy (conceptualization, methodology, investigation, formal analysis, data curation, writing --- original draft, writing --- review and editing, software, validation). The lead author drafts the statement for their project; the two co-authors confirm or contest it. The statements are published with the manuscripts, as they would be in a journal.
+
+Your contribution grade is assessed on the two statements in which you appear as co-author, read alongside the visible record --- the repository commit history, coding sheets, your written comments on drafts, and my own observations in relevant sessions. The standard is *substantive, documented, and reliable*: work that measurably improved the project, that can be pointed to, and that arrived when it was promised.
+
+Three things follow from this. First, being a good co-author is graded work, not goodwill. Second, disagreement handled well --- a second coder who argues for a different code and documents the resolution --- counts in your favour, not against it. Third, the contributorship statements are themselves an open-science practice, and filing an honest one is part of the exercise.
+
+### Computational reproducibility report (25%)
+
+Individually, each of you selects a recent communication paper that has shared its data and analysis code, attempts to reproduce one focal result in R, and writes a report of roughly 1,000 - 1,500 words on what worked, what did not, and what further information would have been needed. **Due week 7 (28 October)** --- deliberately before the preregistration milestone, so that you arrive at your own project having felt the difference between code that runs and code that runs for someone else.
+
+Where possible, choose a paper in or adjacent to your project topic, so the work compounds rather than competes. The grade rewards the rigor of the attempt and the specificity of the diagnosis. It does not reward or penalize whether the original paper happened to reproduce.
+
+### Participation and reading engagement (15%)
+
+Before each reading-based session, post a short response (about 250 words) to the shared course space: a question, an objection, or a connection to your own project. Quality matters more than count. Graded holistically. In a seminar of three, attendance is not a formality --- one absence is a quarter of the room.
+
+# The lead project: two tracks
+
+Every project is a study *of* research rather than a study of people, which is what makes it finishable in a single term: no recruitment, no ethics bottleneck, and a population of studies that already exists. The two tracks differ in what they take as the object of inquiry.
+
+### Track A --- Evidence-based: diagnosing the evidence-production process
+
+Forensic meta-science. These projects ask whether a body of published findings is what it appears to be, using the statistical record itself as evidence about the process that generated it.
+
+Examples:
+
+- **Evidential-value audit of a sub-literature.** Take a coherent body of work in communication --- third-person effects, hostile media, fear appeals, framing, social media and well-being, narrative persuasion --- curate a transparent inclusion set, extract focal test statistics, and assess evidential value with p-curve, z-curve, R-index, TIVA, and excess-significance tests.
+- **Statistical-reporting integrity audit.** Run statcheck across a defined corpus of communication articles to estimate the prevalence and direction of reporting inconsistencies, and examine whether errors favour significance.
+- **Power and effect-size audit.** Estimate the distribution of statistical power, or of effect sizes, across a defined literature, and consider what that distribution implies about the findings it has produced.
+- **Meta-analytic bias re-analysis.** Take published meta-analyses in communication and re-estimate them under a range of publication-bias correction models, comparing how much the conclusions move.
+
+### Track B --- Reporting-based: monitoring openness and reporting against a standard
+
+Transparency monitoring. These projects ask whether published work meets a stated standard of openness or reporting completeness --- and, where the standard is met nominally, whether it is met substantively.
+
+Examples:
+
+- **Transparency-trends audit of a journal or set of journals.** Code recent volumes for preregistration use, data and code availability, materials sharing, and sample-size justification, and report the trend over time.
+- **From nominal to actual availability.** Follow the data- and code-availability statements in a corpus to their endpoints. Does the link resolve? Are the files there? Are they usable? The gap between the statement and the artifact is itself the finding.
+- **Preregistration adherence.** For articles that report a preregistration, compare the registration to the published paper: what was specified, what changed, what was disclosed.
+- **TOP-guideline implementation.** Code a set of communication journals' policies against the Transparency and Openness Promotion guidelines, and compare stated policy with observed practice in what they publish.
+- **The durability of data-availability statements.** Follow the repository links in a corpus of communication articles and characterize where the field's shared materials actually live --- OSF, personal websites, journal supplements, institutional repositories, GitHub without an archive. Given the OSF Projects retirement, what fraction of the field's open materials sit on infrastructure whose status is changing, and how many links have already rotted? This one is timely, has no published precedent in communication, and is a plausible short paper.
+- **Reporting completeness.** Assess a corpus against a reporting standard relevant to its design --- exclusions, manipulation checks, full condition reporting, effect sizes with intervals, constraints on generality.
+
+### Or propose your own
+
+You may propose a different meta-research project. I would rather supervise a question you care about than one you selected from a list, and if you arrive with a thesis topic already in mind, a project adjacent to it is the best use of the term.
+
+Three conditions, and they are not negotiable:
+
+1.  **The population already exists.** Published studies, registrations, journal policies, code repositories, retraction records --- something already out there to be sampled and coded. No new human-subjects data collection; that is what makes these projects finishable in fourteen weeks and free of the ethics queue.
+2.  **The corpus is definable by week 6.** You must be able to state, in a sentence, what is in your sample and what is out of it, and defend the boundary.
+3.  **The tools exist.** Your analysis should be feasible with methods that already have implementations, or with coding you can do by hand at the scale you have proposed.
+
+**Submit a one-paragraph proposal for approval by week 5 (14 October)** --- earlier is better, and I will read drafts before that.
+
+### Choosing
+
+The tracks are not a hierarchy and they differ in the kind of judgement they demand. Track A asks more of your statistics; Track B asks more of your coding protocol and more patience. The three of you need not sit in the same track --- it would make your second-coding for each other more interesting.
+
+You commit to a track and a corpus in week 6, having spent weeks 4 and 5 on selection. If you intend to propose your own project, that proposal is due a week earlier.
+
+# Schedule
+
+*Reading-based sessions draw on the thematic reading list distributed separately; I will name the specific readings a week ahead. The plan below is firm on dates and deliverables, indicative on topics.*
+
+| Wk | Date | Session | Focus | Due |
+|:---|:---|:---|:---|:---|
+| 1 | 16.09 | Seminar | Introduction: the state of science |  |
+| 2 | 23.09 | Seminar | Open science and meta-science: the movement and the empirical field |  |
+| 3 | 30.09 | Seminar + lab | Meta-science in communication; the meta-science toolkit | *GitHub, Zenodo, R, Quarto are all set up* |
+| 4 | 07.10 | Individual | Topic supervision --- one-to-one |  |
+| 5 | 14.10 | Working on your own | Topic selection and scoping; building a sampling frame | *Self-proposed projects due for approval* |
+| 6 | 21.10 | Seminar | Positive bias and publication bias | **Topic statement** |
+| 7 | 28.10 | Seminar | Power, effect size, and NHST | **Reproducibility report (25%)** |
+| 8 | 04.11 | Individual | Design supervision --- one-to-one |  |
+| 9 | 11.11 | Working on your own | Preregistration and coding-protocol drafting; coder calibration |  |
+| 10 | 18.11 | Working on your own | Project work; analysis clinic | **Preregistration submitted** |
+| 11 | 25.11 | Seminar | Theory, measurement, and what transparency does not fix |  |
+| 12 | 02.12 | Individual | Analysis and writing supervision --- one-to-one | *Analysis check-in* |
+| 13 | 09.12 | Seminar | Slow science, incentives, system change, and who pays for the infrastructure; course wrap-up |  |
+| 14 | 16.12 | Presentations | Final presentations --- one per project, all three authors present | **Presentation** |
+| --- | 20.12 | --- |  | **Final manuscript, archive + DOI, contributorship statements** |
+
+# Deliverables at a glance
+
+| Deliverables | Date | Type |
+|----|----|:---|
+| Self-proposed project, for approval (1 paragraph) --- *only if proposing your own* | 14.10 | gatekeeping |
+| Topic statement (1 page: track, corpus, question, feasibility) | 21.10 | formative |
+| Computational reproducibility report (\~1,000-1,500 words) | 28.10 | 25% |
+| Preregistration + coding protocol, registered on OSF Registries | 18.11 | formative |
+| Analysis check-in (rendered draft, however incomplete) | 02.12 | formative |
+| Final presentation | 16.12 | part of 45% |
+| Final manuscript + Zenodo archive with DOI | 20.12 | 45% |
+| Contributorship statements (all three projects) | 20.12 | gateway to 15% |
+
+# Course policies
+
+**Attendance.** Expected. If you must miss a session, tell me in advance and post a written response to that week's thread. In a seminar this size, two unexplained absences will affect the participation grade materially.
+
+**Late work.** Graded deliverables submitted late without an approved extension are penalized two percentage points per day. Extensions are granted liberally for illness or comparable circumstance --- please ask before the deadline whenever you can. Formative milestones carry no late penalty, but skipping one deprives you of feedback the final grade assumes you received.
+
+::: {.callout-warning title="Deadlines are also a collaboration problem"}
+Because two other people's projects depend on your coding and your comments, lateness here is not only your own cost. Commitments made to co-authors are part of what the contribution grade assesses.
+:::
+
+**Generative AI.** Permitted as a research and writing assistant, under two non-negotiable conditions. First, disclose in a brief appendix to each graded deliverable which tools you used and how. Second, the analytic and intellectual core must be your own: the design logic, the coding decisions, the reproduction diagnosis, and the interpretation must reflect your judgement, not a model's. AI-assisted code is fine provided you can read, edit, and explain it. Disclosed and bounded use will not affect your grade; undisclosed use is an academic-integrity matter.
+
+**Academic integrity and plagiarism.** The University of Zurich expects all students to maintain the highest standards of academic integrity. Plagiarism --- presenting someone else's words, ideas, or work as your own without proper attribution --- is a serious violation of academic ethics.
+
+All work submitted for this course must be your own. When you use sources, whether from readings, lectures, or external research, you must cite them properly. This includes ideas, quotes, data, images, and any material borrowed from others. Violations of academic integrity can result in failing the assignment, failing the course, or more serious disciplinary action. For questions about how to cite sources or what constitutes plagiarism, consult the UZH academic integrity guidelines or speak with me. The UZH plagiarism policy is at <https://teaching.uzh.ch/en/teachingstaff/plagiate.html>.
+
+In this seminar, those standards extend to the practices we are studying. Fabricating or selectively reporting coded data, misrepresenting a preregistration, or claiming a reproduction that did not occur are research-integrity violations even in coursework. The bar is not perfection; it is honesty about what you did and did not do --- which is, after all, the subject of the course.
+
+Co-authorship makes one further demand. Your contributorship statement is a claim about who did what, published under your name alongside your colleagues'. Overstating your own contribution, or signing off on a statement you believe to be inaccurate, is an integrity matter and will be treated as one.
+
+**Accessibility and student support.** The University of Zurich is committed to providing an accessible and supportive learning environment for all students. If you have a documented disability or require accommodations to participate fully in this course, please contact the University's Office for Students with Disabilities (<https://disabilityoffice.uzh.ch> or email [fsb\@sib.uzh.ch](mailto:fsb@sib.uzh.ch){.email}) or speak with me as soon as possible. The earlier you make me aware of your needs, the better I can support you.
+
+Course materials are designed to be accessible: readings are provided as text-selectable PDFs and slides are posted in advance.
+
+::: {.callout-tip title="A note on getting started"}
+Meta-science projects fail in one characteristic way: the corpus is defined too late and too loosely, and the coding begins in the last three weeks. The milestones are placed where they are to prevent exactly this. Submit early drafts --- I read them well before deadlines and treat early submission as a courtesy to be reciprocated, not as over-eagerness.
+:::
+
+------------------------------------------------------------------------
+
+*Version 2, 15 Sept 2026. Details of the schedule and reading list may change; substantive changes will be announced in class and reflected in the posted version.*
