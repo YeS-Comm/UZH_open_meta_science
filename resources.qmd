@@ -117,7 +117,7 @@ Metaventory --- a catalogue of meta-science tools and resources --- <https://met
 
 *In communication research*
 
-Dienlin, T., et al. (2021). An agenda for open science in communication. *Journal of Communication, 71*(1), 1--26.
+\[core\] Dienlin, T., et al. (2021). An agenda for open science in communication. *Journal of Communication, 71*(1), 1--26.
 
 Bowman, N. D., & Keene, J. R. (2018). A layered framework for considering open science practices. *Communication Research Reports, 35*(4), 363--372.
 
@@ -129,7 +129,7 @@ Vermeulen, I., Beukeboom, C. J., Batenburg, A., Avramiea, A., Stoyanov, D., van 
 
 Sun, Y., Shen, L., Pan, Z., & Qian, S. (2025). Toward a more powerful experimental communication science: An assessment of two decades' research (2001--2023). *Communication Research, 52*(2), 173--208.
 
-Sun, Y., & Pan, Z. (2020). Not published is not perished: Addressing publication bias in meta-analytic studies in communication. *Human Communication Research, 46*(2--3), 300--321.
+\[core\] Sun, Y., & Pan, Z. (2020). Not published is not perished: Addressing publication bias in meta-analytic studies in communication. *Human Communication Research, 46*(2--3), 300--321.
 
 Masur, P. K., & Ranzini, G. (2025). Privacy calculus, privacy paradox, and context collapse: A replication of three key studies in communication privacy research. *Journal of Communication.*
 
