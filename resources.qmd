@@ -65,6 +65,7 @@ Yarkoni's critique on Bem: <https://talyarkoni.org/blog/2011/01/10/the-psycholog
 
 [Neuroskeptic. (2012). The nine circles of scientific hell. *Perspectives on Psychological Science, 7*(6), 643--644.](https://journals.sagepub.com/doi/full/10.1177/1745691612459519)
 
+[Can we trust social science yet?](https://asteriskmag.com/issues/10/can-we-trust-social-science-yet)
 ## Open science
 
 *Open science: the movement, its principles, its practices*
@@ -266,6 +267,8 @@ Smaldino, P. E., & McElreath, R. (2016). The natural selection of bad science. *
 Nelson, L. D., Simmons, J. P., & Simonsohn, U. (2012). Let's publish fewer papers. *Psychological Inquiry, 23*(3), 291--293.
 
 Vazire, S. (2018). Implications of the credibility revolution for productivity, creativity, and progress. *Perspectives on Psychological Science, 13*(4), 411--417.
+
+[Exclusive: Sham scientific societies are misleading star researchers](https://www.nature.com/articles/d41586-026-02980-w) 
 
 ### Who pays for the infrastructure --- a live case, autumn 2026
 
