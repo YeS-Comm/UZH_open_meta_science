@@ -164,7 +164,8 @@ Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2012). A 21-word solution. *(Ava
 
 *Positive bias and publication bias*
 
-Scheel, A. M., Schijen, M. R. M. J., & Lakens, D. (2021). An excess of positive results: Comparing the standard psychology literature with registered reports. *Advances in Methods and Practices in Psychological Science, 4*(2).
+\[core\] Scheel, A. M., Schijen, M. R. M. J., & Lakens, D. (2021). An excess of positive results: Comparing the standard psychology literature with registered reports. *Advances in Methods and Practices in Psychological Science, 4*(2). <https://doi.org/10.1177/25152459211007467> 
+
 
 Fanelli, D. (2011). Negative results are disappearing from most disciplines and countries. *Scientometrics, 90*(3), 891--904.
 
