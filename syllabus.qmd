@@ -141,6 +141,8 @@ Individually, each of you selects a recent communication paper that has shared i
 
 Where possible, choose a paper in or adjacent to your project topic, so the work compounds rather than competes. The grade rewards the rigor of the attempt and the specificity of the diagnosis. It does not reward or penalize whether the original paper happened to reproduce.
 
+[Assignment instructions](reproducibility-report.html)
+
 ### Participation and reading engagement (15%)
 
 Before each reading-based session, post a short response (about 250 words) to the shared course space: a question, an objection, or a connection to your own project. Quality matters more than count. Graded holistically. In a seminar of three, attendance is not a formality --- one absence is a quarter of the room.
@@ -184,6 +186,8 @@ Three conditions, and they are not negotiable:
 3.  **The tools exist.** Your analysis should be feasible with methods that already have implementations, or with coding you can do by hand at the scale you have proposed.
 
 **Submit a one-paragraph proposal for approval by week 5 (14 October)** --- earlier is better, and I will read drafts before that.
+
+[Assignment instructions](topic-statement.html)
 
 ### Choosing
 
